@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-05T08:43:22.469Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="NQ_6N8YKKHTIWQA4Zj-3" version="14.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-05T10:19:09.663Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="Xkg3Mv7zjd9_dOGyJ3wl" version="14.2.7" type="github">
   <diagram id="5ryn4O-mNtQpwiD8Buub" name="IOC容器初始化">
-    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="1" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
+    <mxGraphModel dx="1422" dy="802" grid="1" gridSize="1" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -40,6 +40,81 @@
         </mxCell>
         <mxCell id="THWWYzbTQuORm8VnBZnU-10" value="判断是否有环境，没有的化则进行创建 new StandaradEnvironment()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="485" y="349" width="180" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-12" value="路径存到数组中" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="634" y="257" width="95" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-13" value="BeanDefinition的载入" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="288" y="466" width="251" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-14" target="THWWYzbTQuORm8VnBZnU-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-14" value="prepareRefresh()&lt;br&gt;刷新前准备" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="9" y="531" width="166" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-15" target="THWWYzbTQuORm8VnBZnU-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-15" value="构建beanFactory&lt;br&gt;obtainFreshBeanFactory()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="221" y="531" width="153" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-16" target="THWWYzbTQuORm8VnBZnU-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-16" value="为上下文准备BeanFactory&lt;br&gt;prepareBeanFactory()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="531" width="168" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-17" target="THWWYzbTQuORm8VnBZnU-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-17" value="设置后置处理器BeanFactory&lt;br&gt;postProcessBeanFactory()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="634" y="531" width="188" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-18" target="THWWYzbTQuORm8VnBZnU-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-18" value="调用bean的后置处理器BeanFactory&lt;br&gt;invokeBeanFactoryPostProcessors" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="635" y="639" width="188" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-19" target="THWWYzbTQuORm8VnBZnU-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-19" value="注册拦截bean创建的处理器&lt;br&gt;registerBeanPostProcessors()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="439" y="639" width="164" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-20" target="THWWYzbTQuORm8VnBZnU-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-20" value="为上下文初始化消息源，国际化功能&lt;br&gt;initMessageSource()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="202" y="640" width="201" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-21" target="THWWYzbTQuORm8VnBZnU-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-21" value="初始化上下文的时间机制&lt;br&gt;initApplicationEventMulticaster" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3" y="640" width="168" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-22" target="THWWYzbTQuORm8VnBZnU-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-22" value="初始化所有的非懒加载单件&lt;br&gt;finishBeanFactoryInitialization()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="438" y="772" width="195" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-23" target="THWWYzbTQuORm8VnBZnU-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-23" value="检查监听的bean，并将他们注册到容器中&lt;br&gt;registerListeners()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="214" y="772" width="194" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="THWWYzbTQuORm8VnBZnU-24" target="THWWYzbTQuORm8VnBZnU-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-24" value="初始化其他特殊bean在特殊上下文子类中&lt;br&gt;onRefresh()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3" y="773" width="192" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="THWWYzbTQuORm8VnBZnU-25" value="发布相关事件，结束refresh&lt;br&gt;finishRefresh()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="663" y="772" width="164" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
