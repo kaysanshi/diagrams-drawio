@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-07T06:00:16.351Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="Vhb2s_42oQaumZZjG0an" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-07T06:01:14.284Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="ACL1wDPh0gbrCfZ7Y9tY" version="14.4.4" type="github">
   <diagram id="5ryn4O-mNtQpwiD8Buub" name="IOC容器初始化">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="1" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="1">
       <root>
@@ -12,7 +12,7 @@
         <mxCell id="THWWYzbTQuORm8VnBZnU-1" value="new&amp;nbsp; ClassPathXml&lt;br&gt;ApplicationContext()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="55" y="97" width="180" height="57" as="geometry" />
         </mxCell>
-        <mxCell id="THWWYzbTQuORm8VnBZnU-2" value="BeanDefinition的Resource定位" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="THWWYzbTQuORm8VnBZnU-2" value="1.BeanDefinition的Resource定位" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="291" y="31" width="210" height="20" as="geometry" />
         </mxCell>
         <mxCell id="THWWYzbTQuORm8VnBZnU-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="THWWYzbTQuORm8VnBZnU-4" target="THWWYzbTQuORm8VnBZnU-5" edge="1">
@@ -44,7 +44,7 @@
         <mxCell id="THWWYzbTQuORm8VnBZnU-12" value="路径存到数组中" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="634" y="257" width="95" height="19" as="geometry" />
         </mxCell>
-        <mxCell id="THWWYzbTQuORm8VnBZnU-13" value="BeanDefinition的载入" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="THWWYzbTQuORm8VnBZnU-13" value="2.BeanDefinition的载入" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="288" y="466" width="251" height="20" as="geometry" />
         </mxCell>
         <mxCell id="THWWYzbTQuORm8VnBZnU-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="THWWYzbTQuORm8VnBZnU-14" target="THWWYzbTQuORm8VnBZnU-15" edge="1">
@@ -116,8 +116,11 @@
         <mxCell id="THWWYzbTQuORm8VnBZnU-25" value="发布相关事件，结束refresh&lt;br&gt;finishRefresh()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="663" y="772" width="164" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZKuWmeZcNKwkzE4vu0xI-1" value="BeanDefinition的载入-----构建beanFactory---&amp;gt;obtainFreshBeanFactory()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="ZKuWmeZcNKwkzE4vu0xI-1" value="2.1BeanDefinition的载入-----构建beanFactory---&amp;gt;obtainFreshBeanFactory()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="183" y="863" width="465" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="ZKuWmeZcNKwkzE4vu0xI-2" value="3.BeanDefinition的注册" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="214" y="1021" width="251" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
